@@ -1,49 +1,52 @@
-// Contact.js
 import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="container mx-auto mt-8">
-      <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
-        <h2 className="text-3xl font-bold mb-4 text-gray-800">Contact Us</h2>
-        <form className="space-y-4">
-          <div>
-            <label className="block text-sm text-gray-600" htmlFor="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="w-full border border-gray-300 p-2 rounded-md"
-              placeholder="Your Name"
-            />
+    <div className="container mt-5">
+      <div className="col-md-6 mx-auto">
+        <div className="card shadow">
+          <div className="card-body">
+            <h2 className="text-center mb-4">Contact Us</h2>
+            <form>
+              <div className="mb-3">
+                <label htmlFor="name" className="form-label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  className="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="email" className="form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="form-control"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="message" className="form-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  className="form-control"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="btn btn-primary btn-block"
+              >
+                Send Message
+              </button>
+            </form>
           </div>
-          <div>
-            <label className="block text-sm text-gray-600" htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="w-full border border-gray-300 p-2 rounded-md"
-              placeholder="Your Email"
-            />
-          </div>
-          <div>
-            <label className="block text-sm text-gray-600" htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              className="w-full border border-gray-300 p-2 rounded-md"
-              placeholder="Your Message"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
-          >
-            Send Message
-          </button>
-        </form>
+        </div>
       </div>
     </div>
   );

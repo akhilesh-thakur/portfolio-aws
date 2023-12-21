@@ -46,7 +46,7 @@ export default function Home() {
 
       <div className="container mt-4" id="education">
         <h2>Education</h2>
-        <p>I have a degree in Computer Science from XYZ University.</p>
+        <p>I have a degree in Computer Science from Internet University.</p>
       </div>
 
       <div className="container mt-4" id="portfolio">
