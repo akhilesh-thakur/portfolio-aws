@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="col-md-6 mx-auto">
         <div className="card shadow">
           <div className="card-body">
-            <h2 className="text-center mb-4">Contact Us</h2>
+            <h2 className="text-center mb-4">Contact Me</h2>
             <form>
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">Name</label>

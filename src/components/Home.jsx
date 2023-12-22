@@ -54,7 +54,7 @@ export default function Home() {
         <div className="card-deck">
           <div className="card" style={styles.card}>
             <img
-              src="../../public/project.png"
+              src="../images/project.png"
               className="card-img-top"
               alt="Project 1"
               style={{width: "30vw"}}
