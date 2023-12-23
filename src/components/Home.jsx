@@ -41,6 +41,8 @@ export default function Home() {
           <li>HTML5 and CSS3</li>
           <li>Database Management (MySQL, MongoDB)</li>
           <li>Responsive Design</li>
+          <li>Aws services</li>
+          <li>Automate tasks with GitHub Actions</li>
         </ul>
       </div>
 
