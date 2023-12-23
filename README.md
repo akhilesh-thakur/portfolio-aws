@@ -2,4 +2,4 @@
 
 ### Refer this for more...
 
-[AWS Blog](../cheatsheets/aws.md)
+[Link to AWS Cheat Sheet](https://github.com/akhilesh-thakur/cheatsheets/blob/main/aws.md)
