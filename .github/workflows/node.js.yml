@@ -16,9 +16,21 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    # Set working directory
+    - name: Set working directory
+      working-directory: /home/ubuntu/react_portfolio/_work/portfolio-aws/portfolio-aws
+
     # Clear npm cache
     - name: Clear npm cache
       run: npm cache clean -f
+
+    # Grant permissions to the directory
+    - name: Grant permissions to the directory
+      run: sudo chmod -R 755 dist/assets
+
+    # Change ownership of the directory
+    - name: Change ownership of the directory
+      run: sudo chown -R $USER:$USER dist/assets
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
@@ -39,6 +51,3 @@ jobs:
     # Install dependencies
     - name: Install dependencies
       run: npm install
-
-    # Your existing npm ci step
-    # - run: npm ci
