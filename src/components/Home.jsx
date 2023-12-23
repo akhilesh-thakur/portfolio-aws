@@ -5,14 +5,14 @@ export default function Home() {
     const styles = {
         jumbotron: {
             backgroundColor: " #343a40",
-            color: "#ffffff"
+            color: "blue"
         },
         card: {
             marginBottom: "20px"
         },
         footer: {
             backgroundColor: "#343a40",
-            color: "#ffffff",
+            color: "blue",
             padding: "20px 0",
             textAlign: "center",
         }
