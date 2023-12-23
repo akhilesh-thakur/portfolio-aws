@@ -6,23 +6,28 @@ on:
 
 jobs:
   build:
-
     runs-on: self-hosted
-
     strategy:
       matrix:
         node-version: [18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - name: Set Permissions
-      run: |
-        sudo chmod -R 755 $GITHUB_WORKSPACE
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
+      - name: Checkout
+        uses: actions/checkout@v2  # Using v2 with clean option
+        with:
+          clean: true  # Perform a clean checkout
+
+      - name: Set Permissions
+        run: sudo chmod -R 755 $GITHUB_WORKSPACE
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build --if-present
