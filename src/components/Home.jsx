@@ -42,8 +42,10 @@ export default function Home() {
           <li>Database Management (MySQL, MongoDB)</li>
           <li>Responsive Design</li>
           <li>Aws services</li>
-          <li>Automate tasks with GitHub Actions failed</li>
-          <li>Automate tasks with Jenkins Baba passed</li>
+          <li>Automate tasks with GitHub Actions</li>
+          <li>Automate tasks with Jenkins Baba</li>
+          <li>He is also proficient in Docker</li>
+          <li>Deep knowledge about Dark Web</li>
         </ul>
       </div>
 
@@ -72,7 +74,7 @@ export default function Home() {
 
       <div className="container mt-4" id="contact">
         <h2>Contact Me</h2>
-        <p>Feel free to reach out to me:</p>
+        <p>Feel free to reach out to me: @ http://43.205.235.10/</p>
       </div>
 
       <div className="footer" style={styles.footer}>
