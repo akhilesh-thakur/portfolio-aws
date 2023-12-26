@@ -5,14 +5,14 @@ export default function Home() {
     const styles = {
         jumbotron: {
             backgroundColor: " #343a40",
-            color: "blue"
+            color: "white"
         },
         card: {
             marginBottom: "20px"
         },
         footer: {
             backgroundColor: "#343a40",
-            color: "blue",
+            color: "white",
             padding: "20px 0",
             textAlign: "center",
         }
@@ -42,7 +42,8 @@ export default function Home() {
           <li>Database Management (MySQL, MongoDB)</li>
           <li>Responsive Design</li>
           <li>Aws services</li>
-          <li>Automate tasks with GitHub Actions</li>
+          <li>Automate tasks with GitHub Actions failed</li>
+          <li>Automate tasks with Jenkins Baba passed</li>
         </ul>
       </div>
 
