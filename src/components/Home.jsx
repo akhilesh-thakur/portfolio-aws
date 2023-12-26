@@ -4,7 +4,7 @@ export default function Home() {
     // css here
     const styles = {
         jumbotron: {
-            backgroundColor: " #343a40",
+            backgroundColor: " #04AA6D",
             color: "white"
         },
         card: {
